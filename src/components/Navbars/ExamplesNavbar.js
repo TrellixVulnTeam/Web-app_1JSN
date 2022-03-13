@@ -59,9 +59,11 @@ function ExamplesNavbar() {
             data-placement="bottom"
             // to="/la"
             href="/landing-page"
-            title="Coded by Creative Tim"
+            title="Efoye Baby Bed's"
             // tag={Link}
           >
+          <img src="new_logoo.png"  heights="300" />
+            {/* <img src="../public/logo-desplay.png"/> */}
             Efoye
           </NavbarBrand>
           <button
