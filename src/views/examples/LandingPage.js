@@ -20,6 +20,8 @@ import {
 // core components
 import LandingPageHeader from 'components/Headers/LandingPageHeader.js';
 import DemoFooter from 'components/Footers/DemoFooter.js';
+import {Helmet} from "react-helmet-async"
+
 
 function LandingPage() {
   document.documentElement.classList.remove('nav-open');
@@ -31,6 +33,11 @@ function LandingPage() {
   });
   return (
     <>
+    <Helmet>
+      <title>Landing</title>
+      <meta name="description" content="Landing page of efoye happy baby happy family" />
+      <link rel="canonical" href="/landing-page" />
+      </Helmet>
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">
