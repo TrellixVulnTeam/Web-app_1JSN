@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // nodejs library that concatenates strings
 import classnames from 'classnames';
 
@@ -62,7 +62,7 @@ function ExamplesNavbar() {
             title="Efoye Baby Bed's"
             // tag={Link}
           >
-          <img src="new_logoo.png"  heights="300" />
+          <img src="new_logoo.png"  heights="300"  alt="The logo"/>
             {/* <img src="../public/logo-desplay.png"/> */}
             Efoye
           </NavbarBrand>

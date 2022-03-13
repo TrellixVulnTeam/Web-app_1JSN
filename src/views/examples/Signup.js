@@ -17,7 +17,7 @@ import { compose } from 'recompose';
 
 import { withFirebase } from '../../components/Firebase';
 import * as ROUTES from '../../constants/routes';
-import * as ROLES from '../../constants/roles';
+// import * as ROLES from '../../constants/roles';
 
 function RegisterPage() {
   document.documentElement.classList.remove('nav-open');
@@ -83,7 +83,7 @@ const INITIAL_STATE = {
   email: '',
   passwordOne: '',
   passwordTwo: '',
-  isAdmin: false,
+  // isAdmin: false,
   error: null,
   deviceId: '',
 };
@@ -107,13 +107,13 @@ class SignUpFormBase extends Component {
   }
 
   onSubmit = (event) => {
-    const { username, email, passwordOne, isAdmin, deviceId } =
+    const { username, email, passwordOne, deviceId } =
       this.state;
     const roles = {};
 
-    if (isAdmin) {
-      roles[ROLES.ADMIN] = ROLES.ADMIN;
-    }
+    // if (isAdmin) {
+    //   roles[ROLES.ADMIN] = ROLES.ADMIN;
+    // }
 
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
@@ -159,7 +159,7 @@ class SignUpFormBase extends Component {
       email,
       passwordOne,
       passwordTwo,
-      isAdmin,
+      // isAdmin,
       error,
       deviceId,
     } = this.state;

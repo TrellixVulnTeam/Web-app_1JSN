@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Input, Label } from 'reactstrap';
+import { Label } from 'reactstrap';
 import { withFirebase } from '../../components/Firebase';
 import { AuthUserContext } from '../Session';
 const Read = ({ id }) => {
@@ -9,9 +9,7 @@ const Read = ({ id }) => {
 };
 class ReadBase extends Component {
   static contextType = AuthUserContext;
-  constructor(props) {
-    super(props);
-  }
+  
 
   componentDidMount() {
     const user = this.context;

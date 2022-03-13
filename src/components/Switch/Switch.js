@@ -11,9 +11,7 @@ const Switch = ({ id }) => {
 class SwitchBase extends Component {
   static contextType = AuthUserContext;
 
-  constructor(props) {
-    super(props);
-  }
+  
   componentDidMount() {
     const user = this.context;
 
@@ -52,7 +50,7 @@ class SwitchBase extends Component {
         />
         <Label
           style={{
-            background: this.props.value == 'ON' && '#06D6A0',
+            background: this.props.value === 'ON' && '#06D6A0',
           }}
           className="react-switch-label"
           htmlFor={this.props.id}

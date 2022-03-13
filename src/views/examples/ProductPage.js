@@ -12,8 +12,8 @@ import {
 } from 'reactstrap';
 
 // core components
-import Switch from '../../components/Switch/Switch';
-import Read from '../../components/ReadSensorValue/Read';
+// import Switch from '../../components/Switch/Switch';
+// import Read from '../../components/ReadSensorValue/Read';
 import image from '../../assets/img/sub.png';
 
 export default function DocumentPage(props) {
@@ -453,6 +453,7 @@ export default function DocumentPage(props) {
               className="mx-auto d-block"
               width={600}
               height={800}
+              alt="..."
             />
           </Col>
           {/* <Col className="mx-auto" md="4"></Col> */}
