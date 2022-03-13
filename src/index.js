@@ -7,13 +7,16 @@ import 'bootstrap/scss/bootstrap.scss';
 import 'assets/scss/paper-kit.scss?v=1.3.0';
 import 'assets/demo/demo.css?v=1.3.0';
 
+import {HelmetProvider} from 'react-helmet-async'
 import App from './App';
 import Firebase, { FirebaseContext } from './components/Firebase';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
-    <App />
+    <HelmetProvider>
+     <App />
+    </HelmetProvider>
   </FirebaseContext.Provider>,
   document.getElementById('root'),
 );
