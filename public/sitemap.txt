@@ -1,0 +1,4 @@
+https://iot-bbms-development.web.app
+https://iot-bbms-development.web.app/landing-page
+https://iot-bbms-development.web.app/document-page
+https://iot-bbms-development.web.app/product-page
