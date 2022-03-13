@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "iot-bbms-development"
+  },
+  "targets": {}
+}
