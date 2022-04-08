@@ -7,10 +7,7 @@ ReacJS web UI for SNS eCommerce.
 System requirements:
 
 - [node v14](https://nodejs.org/download/release/v14.18.3/)
-- [docker-compose](https://docs.docker.com/compose/install/)
-- [dotnet core 6](https://docs.microsoft.com/en-us/dotnet/core/install/) 
-- Entity Framework (after installing dotnet core)
-  - `dotnet tool install --global dotnet-ef`
+
 
 From the Efoye directory run:
 
@@ -44,22 +41,16 @@ npm run dev
 
 - DB access
 
-  Until our API is up and running, we are using Prisma to directly query the DB.  Please see the [Prisma Docs](https://www.prisma.io/docs/concepts/components/prisma-client) for details on using the client.  Please see:
-
-  - [./prisma/schema.prisma](./prisma/schema.prisma) - for the database schema
-  - [./prisma/seedDev.ts](./prisma/seedDev.ts) - for the initial seeding file.  This file will contain examples of how to read, write, and connect relations.
-
-We want to keep the website as static as possible.  Use `getStaticPaths` and `getStaticProps` as much as possible and "rehydrate" the data on the client side.  Ths will allow the website to be pushed to the edge as much as possible.  
-
 ## Database Schema Updates
 
-The web api is not up and running yet so we are directly connecting to the database via prisma.  The database schema's "source of truth" is still in the SNSBackend's code.  To make schema changes:
 
-1. Update the model in SNSBackend/Model
+
+1. Update the model in Efoye/Model
 2. Add a new migration with entity framework
 
     ```bash
     dotnet ef migrations add <short description>
+    Firebase is used for time being 
     ```
 
 3. Update the database
