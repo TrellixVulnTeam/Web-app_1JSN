@@ -23,9 +23,7 @@ npm run dev
 
 ## Developing Standards
 
-- Routing
 
-  Routing is done dynamically in the /pages directory.  See the [Nextjs routing documents](https://nextjs.org/docs/routing/introduction) for in depth routing.  We will be using index routes, and dynamic routes. **Please do NOT put business logic in the /Pages files.  Anything more than component rendering should go in the /src directory**
 
 - /src directory
 
@@ -43,27 +41,10 @@ npm run dev
 
 ## Database Schema Updates
 
+  ```text
+  Database is used  pass which is firebase 
+  ```
 
-
-1. Update the model in Efoye/Model
-2. Add a new migration with entity framework
-
-    ```bash
-    dotnet ef migrations add <short description>
-    Firebase is used for time being 
-    ```
-
-3. Update the database
-
-    ```bash
-    dotnet ef database update
-    ```
-
-4. Pull database into prisma and update the client
-
-   ```bash
-    npx prisma db pull && npx prisma generate
-   ```
 
 ## Branch Structure
 
@@ -73,10 +54,7 @@ Developers should create branches for each feature/bug.  Once the unit of work i
 
 ## CI/CD
 
-Any commit into master or main branch with kick off a "GitHub Action" to deploy to Vercel.  The actions will:
+Any commit into master or main branch with kick off a "GitHub Action" to deploy to Firebase.  The actions will:
 
-1. Update the database with latest migration.  Revert the migration to test rollback.  Re-apply the latest migration
 
-2. Seed the database
-
-3. Deploy to Vercel.  Check the action log to view the deployed site.
+1. Deploy to Firebase.  Check the action log to view the deployed site.
