@@ -1,5 +1,5 @@
 # Efoye - Happy baby, Happy Family
-![Build & Deploy to Firebase](https://github.com/Gedewon/Efoye-team/Web-app/actions/workflows/main.yml/badge.svg)
+![CI - Deploy Efoye from main](https://github.com/Efoye-team/Web-app/actions/workflows/main.yml/badge.svg)
 >![screencapture-iot-bbms-development-web-app-landing-page-2022-07-04-22_02_28](https://user-images.githubusercontent.com/56429354/177206807-a35e65c2-17ce-4f7c-8db8-e59612cebeca.png)
 
 ReacJS web UI for Efoye eCommerce.  
