@@ -1,6 +1,7 @@
 # Efoye - Happy baby, Happy Family
+>![screencapture-iot-bbms-development-web-app-landing-page-2022-07-04-22_02_28](https://user-images.githubusercontent.com/56429354/177206807-a35e65c2-17ce-4f7c-8db8-e59612cebeca.png)
 
-ReacJS web UI for SNS eCommerce.  
+ReacJS web UI for Efoye eCommerce.  
 
 ## Installation
 
@@ -34,7 +35,6 @@ npm run dev
       SomeModule
       components (react components)
       lib (common classes, libraries, utilities for the module)
-      state (if a state object is required)
   ```
 
 - DB access
@@ -42,7 +42,7 @@ npm run dev
 ## Database Schema Updates
 
   ```text
-  Database is used  pass which is firebase 
+  Database used is firebase Realtime db and Firestore 
   ```
 
 
